@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/androids/login.json
+    body:
+      encoding: UTF-8
+      string: mobile_number=911111111111&password=passwrd&splat%5B%5D=login.json&captures%5B%5D=login.json
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"7930d071690f782eb881a0316f837d45"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hoppr_services_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWI4NTRkNzM4MTFlNjZkZGI2ZWE2M2FiNTI2MDA3ODUxBjsAVA%3D%3D--ee1b6a101610076e5f37ff9c39df717d6b6429b5;
+        path=/; HttpOnly
+      X-Request-Id:
+      - f702a3b69f7d6065ee40daccb86e61d6
+      X-Runtime:
+      - '0.695958'
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '121'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"user_id":"5040667f71fd807284000002","mobile_number_verified":false,"session_id":"7542d07a-153a-45ff-9840-1121ca139c1f"}'
+    http_version: !!null 
+  recorded_at: Sun, 02 Sep 2012 12:44:08 GMT
+recorded_with: VCR 2.2.4

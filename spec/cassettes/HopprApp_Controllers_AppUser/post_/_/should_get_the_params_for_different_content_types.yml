@@ -1,0 +1,141 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/androids/login.json
+    body:
+      encoding: UTF-8
+      string: user%5Busername%5D=testuser&user%5Bemail%5D=test%40test.com&user%5Bpassword%5D=pass1&user%5Bpassword_confirmation%5D=pass1&splat%5B%5D=login.json&captures%5B%5D=login.json
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"01eaf2c143700d8b3576581e00e4f318"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hoppr_services_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWRlODc3NmJkZDUyYmUwOWExYjg0ZDMyNWUxYTlkNTZmBjsAVA%3D%3D--2c20f42a570a3d00929de5bd9748710581bd03bb;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 88ab4fdecf8130db0f458e3601f71b28
+      X-Runtime:
+      - '0.578114'
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '121'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"user_id":"501ab9b9a52fe219860008db","mobile_number_verified":false,"session_id":"5e936d20-8b25-4360-ba14-62f1d4b309bf"}'
+    http_version: !!null 
+  recorded_at: Sun, 02 Sep 2012 12:44:08 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/androids/login.json
+    body:
+      encoding: UTF-8
+      string: user%5Bpassword_confirmation%5D=pass1&user%5Busername%5D=testuser&user%5Bpassword%5D=pass1&user%5Bemail%5D=test%40test.com&splat%5B%5D=login.json&captures%5B%5D=login.json
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"f806c45869210f3ee930d1f0d91d856a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hoppr_services_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWQzYWM5Y2M5ZTI5ZjFlYzNlZTAzOWVhMzE2M2NmYmFjBjsAVA%3D%3D--6fdd0a1eceebd96aabd333c2e72403bc379e27a8;
+        path=/; HttpOnly
+      X-Request-Id:
+      - d0a4f64f9ac3bdb9cc2dac437bb189b1
+      X-Runtime:
+      - '0.521734'
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '121'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"user_id":"501ab9b9a52fe219860008db","mobile_number_verified":false,"session_id":"f3747ea6-b5b8-4555-9349-6818cddca28d"}'
+    http_version: !!null 
+  recorded_at: Sun, 02 Sep 2012 12:44:09 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/androids/login.json
+    body:
+      encoding: US-ASCII
+      string: ! '%7B%22user%22%3A%7B%22password_confirmation%22%3A%22pass1%22%2C%22username%22%3A%22testuser%22%2C%22password%22%3A%22pass1%22%2C%22email%22%3A%22test%40test.com%22%7D%7D&splat%5B%5D=login.json&captures%5B%5D=login.json'
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"6adb79cb7ffacdef57778e83e8bfb810"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _hoppr_services_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTZjMDgxYzdmZTUxZjFlMGUwNzg3NGY3YjkzYzYyMTY0BjsAVA%3D%3D--2dfcd29f6b3eb4b228ad9d09a0991761ec2646d6;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 7d12dab35303f5966048437a8718bb49
+      X-Runtime:
+      - '0.512755'
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '121'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"user_id":"501ab9b9a52fe219860008db","mobile_number_verified":false,"session_id":"a8d395fb-09cc-4eb3-b9a4-d954ea3e2bfd"}'
+    http_version: !!null 
+  recorded_at: Sun, 02 Sep 2012 12:44:09 GMT
+recorded_with: VCR 2.2.4

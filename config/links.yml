@@ -1,0 +1,17 @@
+defaults: &defaults
+  services:
+    host: localhost
+    port: 3000
+    path: androids
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  services:
+    host: <%= ENV['SERVICES_HOST'] %>
+    port: <%= ENV['SERVICES_PORT'] || '8080' %>
+    path: ira/androids

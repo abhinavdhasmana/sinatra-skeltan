@@ -1,0 +1,13 @@
+application:
+  env: production
+
+ruby:
+  version: 1.9
+
+web:
+  context: /app
+  session-timeout: 5m
+
+environment:
+  BUNDLE_WITHOUT: "development:test"
+  RACK_ENV: production

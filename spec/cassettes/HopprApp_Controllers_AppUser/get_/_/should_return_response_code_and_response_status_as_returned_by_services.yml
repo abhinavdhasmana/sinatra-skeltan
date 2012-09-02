@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/androids/is_mobile_number_verified.json?captures%5B0%5D=is_mobile_number_verified.json&session_id=something-crappy&splat%5B0%5D=is_mobile_number_verified.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 0ae395b2ae5e6fe72ff7332916be0b0e
+      X-Runtime:
+      - '0.003721'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Connection:
+      - close
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAJlUQ1AAA8orzckBAAAA//8DAE/8yyUEAAAA
+    http_version: !!null 
+  recorded_at: Sun, 02 Sep 2012 12:44:09 GMT
+recorded_with: VCR 2.2.4
