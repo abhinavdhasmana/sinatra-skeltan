@@ -1,36 +1,8 @@
 post:
-  - login.json
-  - update_profile.json
-  - add_place.json
-  - forgot_password.json
-  - reset_password.json
-  - update_points.json
+  - ping
 
 get:
-  - is_mobile_number_verified.json
-  - profile.json
-  - checkin_history.json
-  - near_by_places.json
-  - search.json
-  - public_profile.json
-  - friend_public_profile.json
-  - checkin.json
-  - facebook_news_feed.json
-  - add_place.json
-  - logout.json
-  - offer_detail.json
-  - place_detail.json
-  - get_coupon.json
-  - update_facebook_information.json
-  - facebook_news_feed.json
-  - rate_place.json
-  - send_email_confirmation_code.json
-  - verify_email.json
-  - get_leaderboard_list_local.json
-  - get_leaderboard_list_global.json
-  - get_skippr_and_chasers.json
-  - user_rank.json
-  - coupon_list.json
+  - ping
 
 put:
   - ping
